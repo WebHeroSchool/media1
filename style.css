@@ -1,0 +1,166 @@
+@media (min-width:20em) {
+p{font-size: 15px;}
+ }
+@media (min-width:30.063em) {
+p{font-size: 17px;}
+}
+@media (min-width:40.063em) {
+p{font-size: 19px;}
+}
+@media (min-width:60.063em) {
+p{font-size: 21px;}
+}
+@media (min-width:64.063em) { 
+p{font-size: 23px;} 
+}
+@media (min-width:80.063em) {
+p{font-size: 25px;}
+}
+
+body{
+  margin:0;
+  overflow-x:hidden;
+}
+header{
+  width:100%;
+  display:table;
+  background-color:#ddd;
+  margin-bottom:50px;
+}
+.container{
+  width:100%;
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left: auto;
+}
+h2{
+  text-align: center;
+}
+p{
+  width: 95%;
+  text-align: justify;
+}
+@media (min-width: 1200px) {
+.container{max-width:1140px;
+}
+}
+#logo{
+  float:left;
+  font-family: Palatino;
+  font-style: oblique;
+  font-size:25px;
+  text-transform:uppercase;
+  color: black;
+  font-weight:600;
+  text-decoration:none;
+  padding:11px 0;
+}
+nav{
+  width:auto:;
+  float:right;
+  margin-top:10px;
+}
+nav ul{
+  display:table;
+  float:right;
+  margin:0;
+  padding:0;
+}
+nav ul li{
+  float:left;
+  list-style-type:none;
+}
+nav ul li a{
+  color: black;
+  font-size:19px;
+  padding:7px 19px;
+  display:inline-block;
+  text-decoration:none}
+nav ul li a:hover{
+  background-color:grey;
+  color: white;
+  text-decoration:underline;
+}
+.toggle-menu ul{
+  display:table;
+  width:30px;
+  margin-left:0;
+  padding-left:0;
+  margin:5px;
+}
+.toggle-menu ul li{
+  width:100%;
+  height:3px;
+  background-color: black;
+  margin-bottom:4px;
+  list-style:none;
+}
+.toggle-menu ul li:last-child{
+  margin-bottom:0;
+}
+input[type=checkbox],label{
+  display:none;
+}
+@media only screen and (max-width: 980px) {
+header{
+  padding:20px 0;
+}
+#logo{
+  padding:0;
+}
+input[type=checkbox]{
+  position:absolute;
+  top:-9999px;
+  left:-9999px;
+  background:none;
+}
+input[type=checkbox]:fous{
+  background:none;
+}
+label{
+  float:right;
+  display:inline-block;
+  cursor:pointer;
+  margin-right:25px;
+}
+input[type=checkbox]:checked ~ nav{
+  display:block;
+}
+nav{
+  display:none;
+  position:absolute;
+  right:0;
+  top:50px;
+  background-color: grey;
+  padding:0;
+  z-index:99;
+}
+nav ul{
+  width:auto;
+}
+nav ul li{
+  float:none;
+  padding:0;
+  width:100%;
+  display:table;
+}
+nav ul li a{
+  color: white;
+  font-size:15px;
+  padding:10px 20px;
+  display:block;
+  border-bottom:1px solid;
+}
+}
+@media only screen and (max-width: 360px) {
+label{
+  padding:5px 0;
+}
+#logo{
+  font-size:20px;
+}
+nav{
+  top:47px;
+}
+}
